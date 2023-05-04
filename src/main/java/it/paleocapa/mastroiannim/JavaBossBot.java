@@ -57,17 +57,5 @@ public class JavaBossBot extends TelegramLongPollingBot {
                 E.printStackTrace();
             }
         }
-        if(command.equals("/ok")){
-            String mess = "come state?";
-            SendMessage respons = new SendMessage();
-            respons.setChatId(update.getMessage().getChatId().toString());
-            respons.setText(mess);
-
-            try {
-                execute(respons);
-            }catch (TelegramApiException E){
-                E.printStackTrace();
-            }
-        }
 	}
 }
