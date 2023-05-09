@@ -45,8 +45,8 @@ public class JavaBossBot extends TelegramLongPollingBot {
 	public void onUpdateReceived(Update update) {
 		String command = update.getMessage().getText();
 
-        if(command.equals("/run")){
-            String message = "ciao a tutti.";
+        if(command.equals("/ordina")){
+            String message = "cosa vui ordinare ?";
             SendMessage response = new SendMessage();
             response.setChatId(update.getMessage().getChatId().toString());
             response.setText(message);
